@@ -1,8 +1,22 @@
 @import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+.welcome,
+.home_page,
+.signup_page div,
+h1 {
+  background: #cfc490;
+  text-shadow: 1px 2px 3px yellow;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
 body {
   /* background: var(--background);
   color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
   background: #373b44; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -10,6 +24,8 @@ body {
     #373b44
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4286f4, #373b44);
+}
 
-  font-size: 60px;
+.list_pages li {
+  cursor: pointer;
 }
